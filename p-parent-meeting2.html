@@ -1,0 +1,929 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlEkhlas School</title>
+
+    <link rel="icon" href="assets/images/logo1.png" type="image/png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"> -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">    
+    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"> -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/p-styles.css">
+    <!-- If Arabic -->
+    <!-- <link rel="stylesheet" href="assets/css/styles-ar.css"> -->
+    
+    <link rel="stylesheet" href="assets/css/colors.css">
+</head>
+<!-- If Arabic dir="rtl" class="rtl"  -->
+<body>
+    <div id="loader">
+        <div class="container">
+            <div class="loader-inner">
+                <img src="assets/images/logo1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <header id="main-header">
+            <div id="top-bar" class="p-top-bar">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <a id="p-navbar-toggler-lnk" href="javascript:void(0)" class="btn text-primary mr-2" onclick="mobOpenParentMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <a class="navbar-brand m-0" href="#">
+                                <img class="lazyload" data-src="assets/images/logo1.png" >
+                            </a>
+                        </div>       
+                        <div class="d-flex align-items-center justify-content-center text-capitalize">
+                            <div class="p-head-item head-search-form">
+                                <form class="sharp-border-form" action="#">
+                                    <div class="form-group m-0 p-search">
+                                        <input type="search" class="form-control" placeholder="search...">
+                                        <button class="btn btn-primary btn-wz-b4"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="p-head-item head-search-icon">
+                               <a href="javascript:void(0)" onclick="toggleSearch()">
+                                   <span><i class="fas fa-search"></i> </span> 
+                                </a>
+                            </div>
+                            <div class="p-head-item">
+                               <a href="p-notifcations.html">
+                                   <span><i class="fas fa-bell"></i> </span> <span class="notify-circle">3</span>
+                                </a>
+                            </div>
+                            <div class="p-head-item">
+                                <a href="p-inbox.html">
+                                    <span><i class="fas fa-comment-dots"></i> </span><span class="notify-circle">3</span>
+                                </a>
+                            </div>
+                            <div class="p-head-item">
+                                <div class="p-data d-flex align-items-center">
+                                    <span>
+                                        parent name
+                                    </span>
+                                    <img src="assets/images/p-icons/avatar.png" width="30px" height="30px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main-content">
+            <div class="container">
+                <div id="p-page">
+                    <aside id="p-aside">
+                        <a id="p-navbar-close-lnk" onclick="mobCloseParentMenu()"><i class="fas fa-times-circle"></i></a>
+                        <div class="p-aside-inner-wrapper">
+                            <div class="stu-card-info">
+                                <div class="media align-items-center">
+                                    <img class="stu-avatar" src="assets/images/p-icons/student.png">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 mb-2"> year level </h5>
+                                        <p class="m-0"> English School for girls </p>
+                                    </div>
+                                </div>
+                                <div class="stu-card-form mt-3">
+                                    <form class="sharp-border-form" action="#">
+                                        <div class="form-group">
+                                            <select class="form-control " name="selectStudentName" id=" selectStudentName "
+                                                placeholder=" Student Name Here">
+                                                <option value=" Student Name here" disabled hidden selected> Student Name
+                                                    here </option>
+                                                <option value=" StudentName"> StudentName</option>
+                                                <option value=" StudentName "> StudentName </option>
+                                                <option value=" StudentName"> StudentName </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group m-0">
+                                            <select class="form-control " name="selectSemester" id=" selectSemester "
+                                                placeholder=" Second Semester 2020 - 2021 Here">
+                                                <option value="Second Semester 2020 - 2021" disabled hidden selected> Second
+                                                    Semester 2020 - 2021 </option>
+                                                <option value=" StudentName"> StudentName</option>
+                                                <option value=" StudentName "> StudentName </option>
+                                                <option value=" StudentName"> StudentName </option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <nav id="p-nav">
+                                <ul>
+                                    <li>
+                                        <a href="p-attendance.html">
+                                            <img src="assets/images/p-icons/checklist.png" alt="">
+                                            <span>Attendance</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-lessons-plan.html">
+                                            <img src="assets/images/p-icons/calendar.png" alt="">
+                                            <span>Lessons Plan</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-grades-report.html">
+                                            <img src="assets/images/p-icons/result.png" alt="">
+                                            <span> Grades Report</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="p-parent-meeting.html">
+                                            <img src="assets/images/p-icons/child.png" alt="">
+                                            <span> parent meeting</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-inbox.html">
+                                            <img src="assets/images/p-icons/mail.png" alt="">
+                                            <span> messages </span>
+                                            <span class="badge notify-num">2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-notifcations.html">
+                                            <img src="assets/images/p-icons/bell.png" alt="">
+                                            <span> notification </span>
+                                            <span class="badge notify-num">3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-send-complian.html">
+                                            <img src="assets/images/p-icons/idea.png" alt="">
+                                            <span> send complaint </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-announcements.html">
+                                            <img src="assets/images/p-icons/promotion.png" alt="">
+                                            <span> Announcement </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-student-merits.html">
+                                            <img src="assets/images/p-icons/like.png" alt="">
+                                            <span> merits </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-discipline.html">
+                                            <img src="assets/images/p-icons/emoji.png" alt="">
+                                            <span> disciplines </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-trips.html">
+                                            <img src="assets/images/p-icons/electric-bus.png" alt="">
+                                            <span> trips </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-nurse-recommendation.html">
+                                            <img src="assets/images/p-icons/nurse.png" alt="">
+                                            <span> Nurse Recommendation </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-invoices.html">
+                                            <img src="assets/images/p-icons/bill.png" alt="">
+                                            <span> Invoices </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="p-payment-online.html">
+                                            <img src="assets/images/p-icons/pay.png" alt="">
+                                            <span> Online Payment </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                    
+                    <div class="page-content">
+                        <div class="sub-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">School management system</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Parent meetings</li>
+                            </ol>
+                        </div>
+                        <div class="lessons-plan-tabs">
+                            <ul class="nav nav-tabs" id="parentMeetingsTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="grouped-meetings-tab" data-toggle="tab"
+                                        href="#grouped-meetings" role="tab" aria-controls="grouped-meetings"
+                                        aria-selected="true">grouped meetings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="individual-meetings-tab" data-toggle="tab"
+                                        href="#individual-meetings" role="tab" aria-controls="individual-meetings"
+                                        aria-selected="false">individual meetings</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="parentMeetingsTabContent">
+                                <div class="tab-pane fade show active" id="grouped-meetings" role="tabpanel"
+                                    aria-labelledby="grouped-meetings-tab">
+                                    <div class="meetings-items py-3">
+                                        <div class="card meeting-card bg-lightgray rounded-0 mb-4">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-primary"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class="  d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body bg-gray py-2 px-3">
+                                                <div class="meetings-periods d-flex  flex-wrap">
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card taken text-center">
+                                                        <div class="card-header"> taken </div>
+                                                        <div class="card-body">
+                                                            <div class="from"> 9:00 Am </div>
+                                                            <span>/</span>
+                                                            <div class="to"> 10:00 Am </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card taken text-center">
+                                                        <div class="card-header"> taken </div>
+                                                        <div class="card-body">
+                                                            <div class="from"> 9:00 Am </div>
+                                                            <span>/</span>
+                                                            <div class="to"> 10:00 Am </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card meeting-card bg-lightgray rounded-0 mb-4">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-primary"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class=" d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body bg-gray py-2 px-3">
+                                                <div class="meetings-periods d-flex  flex-wrap">
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card taken text-center">
+                                                        <div class="card-header"> taken </div>
+                                                        <div class="card-body">
+                                                            <div class="from"> 9:00 Am </div>
+                                                            <span>/</span>
+                                                            <div class="to"> 10:00 Am </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card taken text-center">
+                                                        <div class="card-header"> taken </div>
+                                                        <div class="card-body">
+                                                            <div class="from"> 9:00 Am </div>
+                                                            <span>/</span>
+                                                            <div class="to"> 10:00 Am </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card meeting-card bg-lightgray rounded-0 mb-4">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-primary"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class=" d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body bg-gray py-2 px-3">
+                                                <div class="meetings-periods d-flex  flex-wrap">
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card taken text-center">
+                                                        <div class="card-header"> taken </div>
+                                                        <div class="card-body">
+                                                            <div class="from"> 9:00 Am </div>
+                                                            <span>/</span>
+                                                            <div class="to"> 10:00 Am </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card taken text-center">
+                                                        <div class="card-header"> taken </div>
+                                                        <div class="card-body">
+                                                            <div class="from"> 9:00 Am </div>
+                                                            <span>/</span>
+                                                            <div class="to"> 10:00 Am </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="meeting-period-card avaliable text-center">
+                                                        <div onclick="currentPeriod($(this))">
+                                                            <div class="card-header"> avaliable </div>
+                                                            <div class="card-body">
+                                                                <div class="from"> 9:00 Am </div>
+                                                                <span>/</span>
+                                                                <div class="to"> 10:00 Am </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="individual-meetings" role="tabpanel"
+                                    aria-labelledby="individual-meetings-tab">
+                                    <div class="meetings-items">
+                                        <h4 class="mb-4 font-weight-bolder"> Individual Meetings </h4>
+                                        <div class="card meeting-card bg-lightgray rounded-0 my-3">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-info"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class="d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body py-2">
+                                                <div class="teacher-time">
+                                                    <h5 class="d-flex flex-wrap justify-content-between ">
+                                                        <span>Teacher Available time</span>
+                                                        <span>24 jan 2020</span>
+                                                    </h5>
+                                                    <div class="teacher-time-bar" id="time-slots">
+                                                        <div class="slots-container" slot-start="09:00"
+                                                            slot-end="11:00">
+                                                            <div class="slot taken" slot-width="25" style="width:25%;">
+                                                                <span class="slot-start-time">09:00</span>
+                                                                <span class="slot-end-time">09:30</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="25" style="width:25%;">
+                                                                <span class="slot-start-time">09:30</span>
+                                                                <span class="slot-end-time">10:00</span>
+                                                            </div>
+                                                            <div class="slot taken" slot-width="25" style="width:25%;">
+                                                                <span class="slot-start-time">10:00</span>
+                                                                <span class="slot-end-time">10:30</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="25" style="width:25%;">
+                                                                <span class="slot-start-time">10:30</span>
+                                                                <span class="slot-end-time">11:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                                <button class="btn btn-secondary px-md-4 reserve-btn"
+                                                    data-toggle="tooltip" data-placement="bottom"
+                                                    title="click on Available time slot to reserve your meeting">
+                                                    reserve meeting time</button>
+                                                <button class="btn btn-danger px-md-4 cancel-btn"> Cancel Reservation
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="card meeting-card bg-lightgray rounded-0 my-3">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-info"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class="d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body py-2">
+                                                <div class="teacher-time">
+                                                    <h5 class="d-flex flex-wrap justify-content-between ">
+                                                        <span>Teacher Available time</span>
+                                                        <span>24 jan 2020</span>
+                                                    </h5>
+                                                    <div class="teacher-time-bar" id="time-slots">
+                                                        <div class="slots-container" slot-start="09:00"
+                                                            slot-end="11:00">
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="50" style="width:50%;">
+                                                                <span class="slot-start-time">09:00</span>
+                                                                <span class="slot-end-time">10:00</span>
+                                                            </div>
+                                                            <div class="slot taken" slot-width="25" style="width:25%;">
+                                                                <span class="slot-start-time">10:00</span>
+                                                                <span class="slot-end-time">10:30</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="25" style="width:25%;">
+                                                                <span class="slot-start-time">10:30</span>
+                                                                <span class="slot-end-time">11:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                                <button class="btn btn-secondary px-md-4" data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title="click on Available time slot to reserve your meeting">
+                                                    reserve meeting time</button>
+                                            </div>
+                                        </div>
+                                        <div class="card meeting-card bg-lightgray rounded-0 my-3">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-info"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class="d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body py-2">
+                                                <div class="teacher-time">
+                                                    <h5 class="d-flex flex-wrap justify-content-between ">
+                                                        <span>Teacher Available time</span>
+                                                        <span>24 jan 2020</span>
+                                                    </h5>
+                                                    <div class="teacher-time-bar" id="time-slots">
+                                                        <div class="slots-container" slot-start="08:00"
+                                                            slot-end="12:00">
+                                                            <div class="slot taken" slot-width="6.25"
+                                                                style="width:6.25%;">
+                                                                <span class="slot-start-time">08:00</span>
+                                                                <span class="slot-end-time">08:15</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="56.25" style="width:56.25%;">
+                                                                <span class="slot-start-time">08:15</span>
+                                                                <span class="slot-end-time">10:30</span>
+                                                            </div>
+                                                            <div class="slot taken" slot-width="6.25"
+                                                                style="width:6.25%;">
+                                                                <span class="slot-start-time">10:30</span>
+                                                                <span class="slot-end-time">10:45</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="18.75" style="width:18.75%;">
+                                                                <span class="slot-start-time">10:45</span>
+                                                                <span class="slot-end-time">11:30</span>
+                                                            </div>
+                                                            <div class="slot taken" slot-width="12.5"
+                                                                style="width:12.5%;">
+                                                                <span class="slot-start-time">11:30</span>
+                                                                <span class="slot-end-time">12:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                                <button class="btn btn-secondary px-md-4" data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title="click on Available time slot to reserve your meeting">
+                                                    reserve meeting time</button>
+                                            </div>
+                                        </div>
+                                        <div class="card meeting-card bg-lightgray rounded-0 my-3">
+                                            <div class="card-header bg-transparent border-bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <div class="text-info"> <b> Mohamed Ahmed </b> </div>
+                                                    <div
+                                                        class="d-flex align-items-center flex-wrap font-sm font-weight-bold">
+                                                        <div class="mx-2">
+                                                            <span>Subject :</span> <span>Math</span>
+                                                        </div>
+                                                        <div class="mx-2">
+                                                            <span>Class :</span> <span>A5</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body py-2">
+                                                <div class="teacher-time">
+                                                    <h5 class="d-flex flex-wrap justify-content-between ">
+                                                        <span>Teacher Available time</span>
+                                                        <span>24 jan 2020</span>
+                                                    </h5>
+                                                    <div class="teacher-time-bar" id="time-slots">
+                                                        <div class="slots-container" slot-start="13:00"
+                                                            slot-end="16:00">
+                                                            <div class="slot taken" slot-width="33.3333333"
+                                                                style="width:33.3333333%;">
+                                                                <span class="slot-start-time">13:00</span>
+                                                                <span class="slot-end-time">14:00</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="16.6666667" style="width:16.6666667%;">
+                                                                <span class="slot-start-time">14:00</span>
+                                                                <span class="slot-end-time">14:30</span>
+                                                            </div>
+                                                            <div class="slot taken" slot-width="8.33333333"
+                                                                style="width:8.33333333%;">
+                                                                <span class="slot-start-time">14:30</span>
+                                                                <span class="slot-end-time">14:45</span>
+                                                            </div>
+                                                            <div class="slot" onclick="selectSlot($(this))"
+                                                                slot-width="8.33333333" style="width:8.33333333%;">
+                                                                <span class="slot-start-time">14:45</span>
+                                                                <span class="slot-end-time">15:00</span>
+                                                            </div>
+                                                            <div class="slot taken" slot-width="33.3333333"
+                                                                style="width:33.3333333%;">
+                                                                <span class="slot-start-time">15:00</span>
+                                                                <span class="slot-end-time">16:00</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                                <button class="btn btn-secondary px-md-4" data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title="click on Available time slot to reserve your meeting">
+                                                    reserve meeting time</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="main-footer">
+            <div id="footer-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="footer-brand"><img class="h-100 lazyload" data-src="assets/images/logo1.png"></a>
+                            <p class="m-0 text-justify">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestiae recusandae cumque. Non laudantium ipsum sapiente officiis. 
+                            </p>
+                            <div class="apps-blk text-capitalize mt-2">
+                                <div class="font-weight-bold mb-2"><img class="app-ico app-ico-lg lazyload" data-src="assets/images/ico-teams.png" >  download teams:</div>
+                                <div class="d-flex">
+                                    <div><a href="https://www.microsoft.com/ar-ww/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-windows.png" >  desktop</a></div>
+                                    <div class="mx-3"><a href="https://play.google.com/store/apps/details?id=com.microsoft.teams&hl=en_US" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-android.png" >  android</a></div>
+                                    <div><a href="https://apps.apple.com/eg/app/microsoft-teams/id1113153706" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-ios.png" > ios</a></div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="px-lg-3">
+                                <h5 class="footer-tit">imprtant links</h5>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="list-unstyled m-0 text-capitalize">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a href="about.html">about school</a></li>
+                                        <li><a href="stages.html">study stages</a></li>
+                                        <li><a href="jobs.html">jobs</a></li>
+                                        <li><a href="admission.html">admission</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled m-0 text-capitalize">
+                                        <li><a href="re-enroll.html">re-enrollment</a></li>
+                                        <li><a href="contact.html">contact us</a></li>
+                                        <li><a href="privacy.html">privacy policy</a></li>
+                                        <li><a href="terms.html">terms of use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-tit">contact information</h5>
+                            <p class="text-capitalize">don't hasitate calling us on or numbers or sending us a message</p>
+                            <div class="contact-item"><i class="fas fa-phone"></i> <span class="ltr-blk">+965 2575 6545</span></div>
+                            <div class="contact-item"><i class="fas fa-envelope"></i> <span class="ltr-blk">school@email.com</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="container">
+                    <div class="copyright-inner">
+                        Copyright © fajer alsabah school 2020 | Designed & Developed by <a class="text-secondary" href="https://roqay.software" target="_balnk">roqay</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="timeReservation" tabindex="-1" role="dialog" aria-labelledby="timeReservationLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pb-0 pt-2 border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class=" text-center text-primary-light1"><b>select time Reservation !</b></h4>
+                        <div class="resrvation-form">
+                            <form id="time-form">
+                                <div>
+                                    <div class="form-group form-row">
+                                        <div class="col-4">
+                                            <label for="timeFrom"> from time</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="time" id="timeFrom" name="timeFrom"
+                                                class="form-control control-time-from" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-row">
+                                        <div class="col-4">
+                                            <label for="timeTo"> to time</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="time" id="timeTo" name="timeTo"
+                                                class="form-control control-time-to" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" id="form-time-submit"
+                                    class="submit btn btn-lightblue confirm-reservation-time w-100 mt-4 py-2"
+                                    data-dismiss="modal">confirm reservation</button>
+                                <div class="invalid-feedback"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade alert-modal" id="cancelIndividualReservation" tabindex="-1" role="dialog"
+            aria-labelledby="cancelIndividualReservationLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pb-0 pt-2 border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="img-confirm-modal">
+                            <img src="assets/images/p-icons/trash.png">
+                        </div>
+                        <h5>Cancellation</h5>
+                        <p> Do you want to cancel the Reservation of meeting </p>
+                        <div id="confirm-delete">
+                            <button class="btn btn-lightblue de-select-time w-100 mt-4" data-dismiss="modal"
+                                onclick="deleteSlot()"> confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade alert-modal" id="confirmReservation" tabindex="-1" role="dialog"
+            aria-labelledby="confirmReservationLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pb-0 pt-2 border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="img-confirm-modal">
+                            <img src="assets/images/p-icons/tick.png">
+                        </div>
+                        <h5>Confirm Reservation !</h5>
+                        <p> Do you want to confirm the meeting date booking </p>
+                        <button class="btn btn-lightblue confirm-select-time w-100 mt-4" data-dismiss="modal"
+                            onclick="confirmCurrentPeriod()"> confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade alert-modal" id="cancelGroupedReservation" tabindex="-1" role="dialog"
+            aria-labelledby="cancelGroupedReservationLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header pb-0 pt-2 border-bottom-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="img-confirm-modal">
+                            <img src="assets/images/p-icons/trash.png">
+                        </div>
+                        <h5>Cancellation</h5>
+                        <p> Do you want to cancel the Reservation of meeting </p>
+                        <button class="btn btn-lightblue de-select-time w-100 mt-4" onclick="confirmCancelPeriod()"
+                            data-dismiss="modal"> confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/p-scripts.js"></script>
+    
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="assets/js/individual-meeting.js"></script>
+    <script>
+        function currentSelectedPeriod($thisSelectedPeriod) {
+            let $target = $thisSelectedPeriod.parents(".selected");
+            $target.addClass("current-selected");
+            $('.meeting-period-card').not($target).removeClass('current-selected');
+            $('#cancelGroupedReservation').modal('show');
+        }
+
+        function confirmCancelPeriod() {
+            let $currentSelected = $('.current-selected');
+            $currentSelected.removeClass("selected current-selected").addClass("avaliable");
+            $currentSelected.find(".de-select-btn").remove();
+            $currentSelected.find(".card-header").text("Avaliable");
+        }
+
+        function currentPeriod($thisPeriod) {
+            let $thisPeriodParent = $thisPeriod.parents(".meeting-period-card");
+            $('.meeting-period-card').not($thisPeriodParent).removeClass('current-period');
+            let $selectedPeriodBefore = $thisPeriod.parents(".meetings-periods").find('.de-select-btn');
+            if ($selectedPeriodBefore.length == 0) {
+                $thisPeriodParent.addClass('current-period');
+                $('#confirmReservation').modal('show');
+            } else {
+                currentSelectedPeriod($selectedPeriodBefore);
+            }
+        }
+
+        function confirmCurrentPeriod() {
+            let $currentPeriod = $('.current-period');
+            $currentPeriod.removeClass("avaliable").addClass("selected");
+            $currentPeriod.append(
+                `<span class="de-select-btn" onclick="currentSelectedPeriod($(this))"><i class="fas fa-times"></i></span>`
+                );
+            $currentPeriod.find(".card-header").text("selected");
+        }
+    </script>
+    
+    
+</body>
+</html>

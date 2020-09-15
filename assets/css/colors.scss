@@ -1,0 +1,272 @@
+$colors: (
+        main: #000, // Body Main Text
+        primary: #043a61, // headings
+        primaryDark: #111623,
+        secondary: #df742b, // buttons and sub headings
+        secondaryTrans25: rgba(223, 116, 43, 0.25), // buttons and sub headings
+        secondaryLight: #fbd3b5,
+        
+        light: #656c72,
+        light2: #f6f6f6,
+        light3: #c7c7c7,
+        light4: #f1f1f1,
+        light5: #f9f9f9,
+        light6: #eaeef2,
+
+        stage1: #f4914d,
+        stage2: #527fbc,
+        stage3: #52b6bb,
+        stage4: #ebc32c,
+
+        circleLight: #fdf0e6,
+        circleYellow: #fed230,
+        circleBlue: #a0c7fd,
+
+        placeholderColor: #a1a1a1,
+        controlBg: #f2f3f6,
+
+        footerTit: #fff,
+        footerTxt: #6b6c70,
+
+        copyrightBorder: #272930,
+        copyrightTxt: #5c5e63,
+
+        blackColor: #000,
+        whiteColor: #fff,
+
+        selectionBg: #000,
+        selectionColor: #fff,
+        scrollTrackBg: #f1f1f1,
+        scrollThumbBg: #888,
+        scrollThumbHoverBg: #555,
+
+        // Parent View Styles 
+        p_AsideBg : #043a61,
+        p_AsideBorder : #111623,
+        p_StuCardBg : rgba(255,255,255,0.45),
+        p_NavLinkBg: rgba(255,255,255,0.15),
+        p_NavLinkBgHover: rgba(255,255,255,0.3),
+        p_NavLinkBgActive: rgba(255,255,255,0.45),
+        p_NavLinkBorder: rgba(255,255,255,0.3),
+        p_breakcrumbBg : #f6f7f8,
+        
+);
+
+$transition: (
+  main: all 0.5s ease
+);
+
+// Styles
+::-moz-selection{color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::selection {color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::-webkit-scrollbar-track {background: map_get($colors, scrollTrackBg);}
+::-webkit-scrollbar-thumb {background: map_get($colors, scrollThumbBg);}
+::-webkit-scrollbar-thumb:hover {background: map_get($colors, scrollThumbHoverBg);}
+
+body{color: map-get($colors, main);}
+
+.bg-primary, .btn-primary
+{
+  background: map-get($colors, primary) !important;
+}
+.text-primary{
+  color: map-get($colors, primary) !important;
+}
+.border-primary{
+  border-color: map-get($colors, primary) !important;
+}
+.bg-secondary, .btn-secondary{
+  background-color:  map-get($colors, secondary) !important;
+}
+.text-secondary{
+  color: map-get($colors, secondary) !important;
+}
+.border-secondary{
+  border-color:  map-get($colors, secondary) !important;
+}
+.btn-primary, .btn-secondary{
+  color: map-get($colors, whiteColor) !important;
+}
+.btn-primary, .btn-secondary{border-color: transparent!important;}
+
+.btn-outline-primary {
+  color: map-get($colors, primary) !important;
+  border-color: map-get($colors, primary) !important;
+}
+.btn-outline-primary:hover {
+  background-color: map-get($colors, primary) !important;color: map-get($colors, whiteColor)!important;
+}
+
+.text-light{color: map-get($colors, light )!important;}
+.bg-secondaryLight{background-color: map-get($colors, secondaryLight )!important;}
+.bg-light2{background-color: map-get($colors, light2 )!important;}
+.bg-light3{background-color: map-get($colors, light3 )!important;}
+.bg-light4{background-color: map-get($colors, light4 )!important;}
+.bg-light5{background-color: map-get($colors, light5 )!important;}
+.bg-light6{background-color: map-get($colors, light6 )!important;}
+
+.info-value{color: map-get($colors, light );}
+
+/* TopBar */
+#top-bar{background-color: #f6f7f8;}
+#top-bar, #top-bar a{color: #656c72;}
+#top-bar .lang-sec a[href]{color: #cdcfd1;}
+#top-bar .lang-sec a[href]:hover{color: #656c72;}
+
+/* NavBar */
+.navbar-light .navbar-nav .nav-link{color: map-get($colors, blackColor );}
+.navbar-light .navbar-nav .active .nav-link{color: map-get($colors, secondary );}
+
+#navbar-toggler-lnk span{background-color: map-get($colors, secondary );}
+@media (max-width: 991.98px) {
+  /* NavBar */
+  .navbar-nav{background: map-get($colors, primary );}   
+  .navbar-nav .nav-link{color: map-get($colors, whiteColor )!important;}
+  .navbar-nav .active > .nav-link{color: map-get($colors, secondary )!important;} 
+}
+
+/* Footer */
+#main-footer{background-color: map-get($colors, primaryDark );}
+#main-footer, #main-footer a, #main-footer .apps-blk a:hover{color:map-get($colors, footerTxt );}
+#main-footer a:hover{color:map-get($colors, secondary );}
+.footer-tit{color:map-get($colors, footerTit );}
+.copyright-inner{border-color: map-get($colors, copyrightBorder );color: map-get($colors, copyrightTxt);}
+
+/* Headings */
+.heading-blk p{color: map-get($colors, light );}
+.heading-blk.text-white p{color: map-get($colors, whiteColor );}
+
+/* Page Title */
+#pg-tit > *{color: map-get($colors, whiteColor);}
+
+/* HomePage */
+#sc-services:before{background-color: map-get($colors, whiteColor );}
+.service-icon::before{background-color: map-get($colors, secondaryLight );}
+.overlay-primaryTrans:before{background-color: map-get($colors, primary );}
+.overlay-whiteTrans:before{background-color: map-get($colors, whiteColor );}
+
+/* Stages */
+#sc-stages .row > div:nth-child(1) .stage-item{
+  background: map-get($colors, stage1);
+}
+#sc-stages .row > div:nth-child(2) .stage-item{
+  background: map-get($colors, stage2);
+}
+#sc-stages .row > div:nth-child(3) .stage-item{
+  background: map-get($colors, stage3);
+}
+#sc-stages .row > div:nth-child(4) .stage-item{
+  background: map-get($colors, stage4);
+}
+
+/* Calendar */
+.fc-toolbar.fc-header-toolbar{background-color: map-get($colors, secondary )!important;}
+.fc-button{background-color: map-get($colors, secondaryLight )!important;}
+.fc-event, .fc-event-dot {
+  background-color: transparent!important;
+  border: 1px solid transparent!important;
+}
+
+/* Stuff */
+#stuff-gallery .owl-nav .owl-prev, 
+#stuff-gallery .owl-nav .owl-next{background-color: map-get($colors, secondary );}
+
+/* Circle Shapes */
+.circle-shape-container:before{border-color: map-get($colors, circleLight );}
+.circles-img::before{border-color: map-get($colors, secondary );}
+.circles-img::after{border-color: map-get($colors, circleYellow);}
+.circles-img-inner:before{background-color: map-get($colors, circleBlue);}
+.circles-img-inner:after{border-color: map-get($colors, circleBlue );}
+
+/* Form Tabs */
+.form-tabs li a{color: map-get($colors, primary);border-color: map-get($colors, primary );}
+.form-tabs li a.active{background-color: map-get($colors, primary)!important;border-color: map-get($colors, primary );}
+.form-tabs li a:before{border-color: map-get($colors, primary );}
+.form-tabs li a.active:before{background-color: map-get($colors, secondary );border-color: map-get($colors, whiteColor );}
+
+
+/* Forms */
+.bg-control{background-color: map-get($colors, controlBg );}
+.bg-control .form-control, .form-white .form-control{background-color: map-get($colors, whiteColor);border-color: map-get($colors, whiteColor );}
+.form-control{background-color: map-get($colors, controlBg );border-color: map-get($colors, controlBg );}
+.form-control::placeholder{color: map-get($colors, placeholderColor );}
+.form-control:focus{border-color: map-get($colors, secondary );box-shadow: 0 0 0 0.2rem map-get($colors, secondaryTrans25 );}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: map-get($colors, primary );
+}
+
+.fileInput-wrapper,
+.add-item {border-color: map-get($colors, primary );color: map-get($colors, primary );background-color: map-get($colors, controlBg );}
+.add-item:hover, .fileInput-wrapper:hover label, .fileInput-wrapper input:focus + label{color: map-get($colors, whiteColor);background-color: map-get($colors, primary );}
+[type="file"]+label {color: map-get($colors, primary );}
+
+
+///////////////////////////////////////////////////////////////////////////
+// Start Parent View Styles
+///////////////////////////////////////////////////////////////////////////
+#p-navbar-toggler-lnk span{background-color: map-get($colors, secondary );}
+#p-aside .p-aside-inner-wrapper{color:#fff;background-color: map-get($colors, p_AsideBg);border-color: map-get($colors, p_AsideBorder );}
+#p-aside .stu-card-info{background-color: map-get($colors, p_StuCardBg );}
+#p-nav a {color: map-get($colors, whiteColor);background-color: #eff2fb;border-color: #dee2e6!important;background-color: map-get($colors, p_NavLinkBg );border-color: map-get($colors, p_NavLinkBorder )!important;}
+#p-nav li:hover a{background-color: map-get($colors, p_NavLinkBgHover );}
+#p-nav li.active a{background-color: map-get($colors, p_NavLinkBgActive );}
+.notify-circle,
+#p-nav .notify-num{background-color: map-get($colors, secondary );color: map-get($colors, whiteColor );}
+/* Parent Pages Breadcrumb */
+.breadcrumb{background-color: map-get($colors, p_breakcrumbBg )!important;}
+.breadcrumb a{color: map-get( $colors, primary )!important;}
+.breadcrumb a:hover{color: map-get( $colors, secondary )!important;}
+.breadcrumb-item.active {color: #9e9e9e;}
+/* Parent Pages Content */
+.notification-date, .lesson-date {color: map-get($colors, secondary );}
+.notification-card a,
+.lesson-card a, .download-link {
+    color: map-get($colors, primary);
+}
+.notification-card a:hover,
+.lesson-card a:hover, .download-link:hover {
+    color: map-get($colors, secondary );
+}
+.lessons-plan-tabs .nav-tabs .nav-item .nav-link {
+  background-color: map-get($colors, secondaryTrans25 );
+  color: map-get($colors, whiteColor );border-color: transparent;
+}
+.lessons-plan-tabs .nav-tabs .nav-item.show .nav-link,
+.lessons-plan-tabs .nav-tabs .nav-link.active {
+    background-color: map-get($colors, secondary );
+}
+/* BTNS */
+.btn-lightblue{background-color: map-get($colors, primary) !important;color: map-get($colors, whiteColor) !important;}
+.btn-outline-primary {background-color: map-get($colors, whiteColor) !important;color: map-get($colors, primary) !important;border: 1px solid map-get($colors, primary);}
+.pagination .page-item.active .page-link {background-color: map-get($colors, secondary );color: map-get($colors, whiteColor );border-color: map-get($colors, secondary );}
+/*Attendance*/
+.card.rounded-0.bg-bluedark{background-color: map-get($colors, secondaryLight )!important;color: map-get($colors, main)!important;border-color: map-get($colors, secondary );}
+.card.rounded-0.bg-bluedark .btn-lightblue {background-color: map-get($colors, secondary ) !important;color: map-get($colors, whiteColor) !important;}
+.week-range {color: map-get($colors, primary);}
+/* Meetings */
+.meeting-period-card {border-color: map-get($colors, secondary );background-color: map-get($colors, whiteColor);}
+.meeting-period-card .card-header {background-color: map-get($colors, secondaryTrans25);color: map-get($colors, blackColor);border-bottom-color: map-get($colors, secondary );}
+.meeting-period-card.taken {border-color: map-get($colors, blackColor );}
+.meeting-period-card.taken .card-header {background-color: map-get($colors, blackColor );;color: map-get($colors, whiteColor);border-bottom-color: map-get($colors, blackColor);}
+.meeting-period-card.selected .card-header {background-color: map-get($colors, secondary );color: map-get($colors, whiteColor);}
+.slot:before{background: map-get($colors, secondaryTrans25 );color: map-get($colors, secondary );}
+.slot.taken:before{background: map-get($colors, blackColor );color: map-get($colors, whiteColor);}
+.slot.active-slot::before {background-color: map-get($colors, secondary );color: map-get($colors, whiteColor);}
+/* Chat */
+.chat-item h5 {color: map-get($colors, primary);}
+.message-item.box-align-left p{background: map-get($colors, primary);}
+.chat-messages-header #chat-mob-back-btn{color: map-get($colors, secondary );}
+///////////////////////////////////////////////////////////////////////////
+// END Parent View Styles
+///////////////////////////////////////////////////////////////////////////
+
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img{
+  transition: map_get($transition, main);
+}

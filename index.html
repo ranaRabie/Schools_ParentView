@@ -1,0 +1,445 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlEkhlas School</title>
+
+    <link rel="icon" href="assets/images/logo1.png" type="image/png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"> -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">    
+    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"> -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- If Arabic -->
+    <!-- <link rel="stylesheet" href="assets/css/styles-ar.css"> -->
+    
+    <link rel="stylesheet" href="assets/css/colors.css">
+</head>
+<!-- If Arabic dir="rtl" class="rtl"  -->
+<body>
+    <div id="loader">
+        <div class="container">
+            <div class="loader-inner">
+                <img src="assets/images/logo1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <header id="main-header">
+            <div id="top-bar">
+                <div class="container">
+                    <div class="topbar-inner">
+                        <div class="topbar-col">
+                            <!-- <div class="lang-sec">
+                                <i class="fas fa-globe"></i>
+                                <a href="#" class="rtl-blk">العربية</a>
+                                <span><i class="fas fa-circle"></i></span>
+                                <a class="ltr-blk">English</a>
+                            </div> -->
+                            <div class="user-blk">
+                                <a href="https://teams.microsoft.com/go#" target="_blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-teams.png" > Login to E-learning platform</a>
+                            </div>
+                        </div>
+                        <div class="topbar-col apps-blk text-capitalize">
+                            <div class="font-weight-bold"><img class="app-ico app-ico-lg lazyload" data-src="assets/images/ico-teams.png" > download teams:</div>
+                            <div><a href="https://www.microsoft.com/ar-ww/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-windows.png" > desktop</a></div>
+                            <div><a href="https://play.google.com/store/apps/details?id=com.microsoft.teams&hl=en_US" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-android.png" > android</a></div>
+                            <div><a href="https://apps.apple.com/eg/app/microsoft-teams/id1113153706" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-ios.png" > ios</a></div>
+                            <!-- <div class="top-contact-item"><i class="fas fa-phone"></i> <span class="ltr-blk">+965 2575 6545</span></div>
+                            <div class="top-contact-item"><i class="fas fa-envelope"></i> <span class="ltr-blk">school@email.com</span></div>
+                            <div class="knet-blk"><a href="#"><img class="lazyload" data-src="assets/images/knet.jpg"></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header-wrap">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light py-0 justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <a id="navbar-toggler-lnk" href="javascript:void(0)" class="btn text-primary mr-2" onclick="mobOpenMainMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <a class="navbar-brand m-0" href="#">
+                                <img class="lazyload" data-src="assets/images/logo1.png" >
+                            </a>
+                        </div>
+        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a id="navbar-close-lnk" onclick="mobCloseMainMenu()"><i class="fas fa-times-circle"></i></a>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">about school</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="stages.html">study stages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="jobs.html">jobs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="admission.html">admission</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="re-enroll.html">re-enrollment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section id="full-slider">
+            <div id="main-slider" class="owl-carousel">
+                <div class="item slide-item" style="background: url(assets/images/slide1.png) no-repeat 50% 50%;background-size: cover;">
+                    <div class="container">
+                        <div class="slide-inner">
+                            <h5>welcome in!</h5>
+                            <h2>alEkhlas school</h2>
+                            <h5>"Striving for distinction, to prepare tomorrow's leaders"</h5>                
+                            <a href="#" class="btn btn-secondary text-capitalize btn-rounded mt-5 btn-wz-b4">about school</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#main-content" class="scrollToContent"><img class="lazyload" data-src="assets/images/mouse.png"></a>            
+        </section>
+        <main id="main-content">
+            <div id="sc-word" class="pb-5">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5">
+                            <div class="heading-blk text-capitalize">
+                                <h4 data-aos="fade-in">general manager word</h4>
+                            </div>
+                            <div class="dyn-content text-light text-justify" data-aos="fade-in">
+                                <p>Welcome to our educational edifice, "AlEkhlas", through our online platform ...</p>
+                                <ul>
+                                    <li>Our mission is pedagogical and our goal is to rehabilitate future generations and instill values and principles according to the latest methods of education that are in line with the accelerating development to achieve the highest levels of culture and science, so our students will be the best sons who we cherish and be proud of as they carry the weapon of science and uphold the ladder of glory and glory and distinction to serve the country and society.</li>
+                                    <li>Therefore, we choose the educational body that is characterized by the competence, experience, educational skills and high morals that make them directly affect the positive impact of our students.</li>
+                                    <li>Our belief that the school and parents are partners in preparing and supporting children to choose the goal of their lives, to be leaders and leaders in all fields of their working life.</li>
+                                    <li>We ask God Almighty to take our hand to follow our lofty message that we hold in our consciences to advance the paths of knowledge and purposeful knowledge.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="word-pics">
+                                <div class="row align-items-end justify-content-end">
+                                    <div class="col-7">
+                                        <img class="w-100 lazyload" data-src="assets/images/sc-genmanager.png" data-aos="fade-in">
+                                    </div>
+                                    <div class="col-5">
+                                        <img class="mb-2 w-100 lazyload" data-src="assets/images/word2.png" data-aos="fade-down">
+                                        <img class="w-100 lazyload" data-src="assets/images/word3.png" data-aos="fade-up">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div id="sc-stages" class="bg-light2 py-5" data-aos="fade-in">
+                <div class="container">
+                    <div class="heading-blk text-capitalize text-center">
+                        <h4 data-aos="fade-in">school stages</h4>
+                        <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem ea maiores.</p>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="stage-item btn btn-wz-b4" data-aos="zoom-in" data-aos-delay="700">
+                                <img class="lazyload" data-src="assets/images/stage1.png">
+                                <span>Kindergarten</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="stage-item btn btn-wz-b4" data-aos="zoom-in" data-aos-delay="900">
+                                <img class="lazyload" data-src="assets/images/stage2.png">
+                                <span>Primary stage</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="stage-item btn btn-wz-b4" data-aos="zoom-in" data-aos-delay="1100">
+                                <img class="lazyload" data-src="assets/images/stage3.png">
+                                <span>Intermediate stage</span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="stage-item btn btn-wz-b4" data-aos="zoom-in" data-aos-delay="1300">
+                                <img class="lazyload" data-src="assets/images/stage4.png">
+                                <span>High school</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sc-services" class="bg-light2 py-5 overlay-holder overlay-whiteTrans" data-aos="fade-in">
+                <div class="container">
+                    <div class="heading-blk text-capitalize text-center">
+                        <h4 data-aos="fade-in">fajer alsabah school services</h4>
+                        <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem ea maiores.</p>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6 col-md-3">
+                            <div class="service-item" data-aos="zoom-in" data-aos-delay="700">
+                                <div class="service-icon"><img class="lazyload" data-src="assets/images/service1.png"></div>
+                                <span>Sports and activities</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="service-item" data-aos="zoom-in" data-aos-delay="900">
+                                <div class="service-icon"><img class="lazyload" data-src="assets/images/service2.png"></div>
+                                <span>school bus</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="service-item" data-aos="zoom-in" data-aos-delay="1100">
+                                <div class="service-icon"><img class="lazyload" data-src="assets/images/service3.png"></div>
+                                <span>Books and library resources</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="service-item" data-aos="zoom-in" data-aos-delay="1300">
+                                <div class="service-icon"><img class="lazyload" data-src="assets/images/service4.png"></div>
+                                <span>science lab</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sc-news" class="bg-light5 py-5 overlay-holder overlay-primaryTrans" data-aos="fade-in">
+                <div class="container">
+                    <div class="heading-blk text-capitalize text-center text-white">
+                        <h4 data-aos="fade-in">advertisment</h4>
+                        <p data-aos="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem ea maiores.</p>
+                    </div>
+                    <div class="news-container" data-aos="zoom-out">
+                        <div id="news-carousel" class="owl-carousel">
+                            <div class="item">
+                                <img class="lazyload" data-src="assets/images/news1.png">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusantium nam totam sit blanditiis libero mollitia provident dolores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sc-events" class="bg-light5 py-5" data-aos="fade-in">
+                <div class="container">
+                    <div class="heading-blk text-capitalize text-center">
+                        <h4 data-aos="fade-in">The monthly school calendar</h4>
+                    </div>
+                    <div id='calendar' data-aos="zoom-in"></div>
+                </div>
+            </div>
+            <div id="sc-gallery" class="bg-light4 py-5" data-aos="fade-in">
+                <div class="heading-blk text-capitalize text-center">
+                    <h4 data-aos="fade-in">photo gallery</h4>
+                </div>
+                <div data-aos="fade-in">
+                    <div id="img-gallery" class="owl-carousel">
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery1.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery2.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery3.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery4.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery5.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery1.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery2.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery3.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery4.png">
+                        </div>
+                        <div class="item gallery-item">
+                            <img class="lazyload" data-src="assets/images/gallery5.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sc-contact" class="py-5 bgs-blk-container footer-sticky" data-aos="fade-in">
+                <div class="bgs-blk">
+                    <div class="row p-0 m-0 justify-content-end">
+                        <div class="col-md-5 p-0">
+                            <img class="w-100 lazyload" data-src="assets/images/contact-bg.png" data-aos="fade-in">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="heading-blk text-capitalize">
+                                <h4 data-aos="fade-in">get in touch with us</h4>
+                                <p data-aos="fade-in">if you couldn't find the information you were looking for on this website, you can contact us</p>
+                            </div>
+                            <form action="" data-aos="fade-up">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="phone number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="your message..."></textarea>
+                                </div>
+                                <button class="btn btn-secondary btn-wz-b4 text-capitalize btn-rounded">send message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="main-footer">
+            <div id="footer-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="footer-brand"><img class="h-100 lazyload" data-src="assets/images/logo1.png"></a>
+                            <p class="m-0 text-justify">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestiae recusandae cumque. Non laudantium ipsum sapiente officiis. 
+                            </p>
+                            <div class="apps-blk text-capitalize mt-2">
+                                <div class="font-weight-bold mb-2"><img class="app-ico app-ico-lg lazyload" data-src="assets/images/ico-teams.png" >  download teams:</div>
+                                <div class="d-flex">
+                                    <div><a href="https://www.microsoft.com/ar-ww/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-windows.png" >  desktop</a></div>
+                                    <div class="mx-3"><a href="https://play.google.com/store/apps/details?id=com.microsoft.teams&hl=en_US" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-android.png" >  android</a></div>
+                                    <div><a href="https://apps.apple.com/eg/app/microsoft-teams/id1113153706" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-ios.png" > ios</a></div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="px-lg-3">
+                                <h5 class="footer-tit">imprtant links</h5>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="list-unstyled m-0 text-capitalize">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a href="about.html">about school</a></li>
+                                        <li><a href="stages.html">study stages</a></li>
+                                        <li><a href="jobs.html">jobs</a></li>
+                                        <li><a href="admission.html">admission</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled m-0 text-capitalize">
+                                        <li><a href="re-enroll.html">re-enrollment</a></li>
+                                        <li><a href="contact.html">contact us</a></li>
+                                        <li><a href="privacy.html">privacy policy</a></li>
+                                        <li><a href="terms.html">terms of use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-tit">contact information</h5>
+                            <p class="text-capitalize">don't hasitate calling us on or numbers or sending us a message</p>
+                            <div class="contact-item"><i class="fas fa-phone"></i> <span class="ltr-blk">+965 2575 6545</span></div>
+                            <div class="contact-item"><i class="fas fa-envelope"></i> <span class="ltr-blk">school@email.com</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="container">
+                    <div class="copyright-inner">
+                        Copyright © fajer alsabah school 2020 | Designed & Developed by <a class="text-secondary" href="https://roqay.software" target="_balnk">roqay</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+    <script src="assets/js/scripts.js"></script>
+
+
+
+
+    <!-- Calender Plugin -->
+    <link href='assets/calender/fullcalendar.min.css' rel='stylesheet' />
+    <link href='assets/calender/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <script src='assets/calender/moment.min.js'></script>
+    <script src='assets/calender/fullcalendar.min.js'></script>
+    <script src='assets/calender/ar.js'></script>
+    <script>
+
+        $(document).ready(function() {
+            var initialLocaleCode = 'en';
+            if($('body').hasClass('rtl')){
+                initialLocaleCode = 'ar';  
+            }
+            
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay,listMonth'
+                },
+                // defaultDate: '2020-05-12',
+                locale: initialLocaleCode,
+                buttonIcons: false, // show the prev/next text
+                weekNumbers: true,
+                navLinks: true, // can click day/week names to navigate views
+                editable: false,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    {
+                    title: 'الفصل الدراسي الثاني الاستثنائي للصف الثاني عشر',
+                    start: '2020-08-09',
+                    constraint: 'secondaryStage', // defined below
+                    },
+
+                    // Constraints
+                    {
+                        id: 'secondaryStage',
+                        start: '2020-08-09',
+                        rendering: 'background',
+                        color: '#fbd3b5',
+                    },
+                ]
+            });
+
+            
+        });
+    </script>
+</body>
+</html>

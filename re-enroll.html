@@ -1,0 +1,816 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlEkhlas School</title>
+
+    <link rel="icon" href="assets/images/logo1.png" type="image/png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"> -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">    
+    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"> -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- If Arabic -->
+    <!-- <link rel="stylesheet" href="assets/css/styles-ar.css"> -->
+    
+    <link rel="stylesheet" href="assets/css/colors.css">
+</head>
+<!-- If Arabic dir="rtl" class="rtl"  -->
+<body>
+    <div id="loader">
+        <div class="container">
+            <div class="loader-inner">
+                <img src="assets/images/logo1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <header id="main-header">
+            <div id="top-bar">
+                <div class="container">
+                    <div class="topbar-inner">
+                        <div class="topbar-col">
+                            <!-- <div class="lang-sec">
+                                <i class="fas fa-globe"></i>
+                                <a href="#" class="rtl-blk">العربية</a>
+                                <span><i class="fas fa-circle"></i></span>
+                                <a class="ltr-blk">English</a>
+                            </div> -->
+                            <div class="user-blk">
+                                <a href="https://teams.microsoft.com/go#" target="_blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-teams.png" > Login to E-learning platform</a>
+                            </div>
+                        </div>
+                        <div class="topbar-col apps-blk text-capitalize">
+                            <div class="font-weight-bold"><img class="app-ico app-ico-lg lazyload" data-src="assets/images/ico-teams.png" > download teams:</div>
+                            <div><a href="https://www.microsoft.com/ar-ww/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-windows.png" > desktop</a></div>
+                            <div><a href="https://play.google.com/store/apps/details?id=com.microsoft.teams&hl=en_US" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-android.png" > android</a></div>
+                            <div><a href="https://apps.apple.com/eg/app/microsoft-teams/id1113153706" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-ios.png" > ios</a></div>
+                            <!-- <div class="top-contact-item"><i class="fas fa-phone"></i> <span class="ltr-blk">+965 2575 6545</span></div>
+                            <div class="top-contact-item"><i class="fas fa-envelope"></i> <span class="ltr-blk">school@email.com</span></div>
+                            <div class="knet-blk"><a href="#"><img class="lazyload" data-src="assets/images/knet.jpg"></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header-wrap">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light py-0 justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <a id="navbar-toggler-lnk" href="javascript:void(0)" class="btn text-primary mr-2" onclick="mobOpenMainMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <a class="navbar-brand m-0" href="#">
+                                <img class="lazyload" data-src="assets/images/logo1.png" >
+                            </a>
+                        </div>
+        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <a id="navbar-close-lnk" onclick="mobCloseMainMenu()"><i class="fas fa-times-circle"></i></a>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">about school</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="stages.html">study stages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="jobs.html">jobs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="admission.html">admission</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="re-enroll.html">re-enrollment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section id="pg-tit" class="overlay-holder overlay-primaryTrans">
+            <div class="container">
+                <h1>re-enrollment</h1>
+            </div>
+        </section>
+        <main id="main-content">
+            <div id="enroll-container" class="text-capitalize">
+                <div class="container">
+                    <div class="bg-control py-3 px-3 mb-3 sharp-border-form">
+                        <div class="form-group m-0">
+                            <label for="stu-select">choose student</label>
+                            <select id="stu-select" class="form-control">
+                                <option value="1">student name</option>
+                                <option value="2">student name</option>
+                                <option value="3">student name</option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="nav nav-pills mb-3 form-tabs align-items-center justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="pills-enroll-tab" data-toggle="pill" href="#pills-enroll" role="tab" aria-controls="pills-enroll" aria-selected="true">re-enroll</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-transfer-tab" data-toggle="pill" href="#pills-transfer" role="tab" aria-controls="pills-transfer" aria-selected="false">Transfer</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-enroll" role="tabpanel" aria-labelledby="pills-enroll-tab">
+                            <p class="text-capitalize font-weight-bold text-center">re-enroll already registered students</p>
+                            <form action="" class="wizerdform">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="stu-code">student code</label>
+                                            <input type="number" class="form-control" id="stu-code" placeholder="student code">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="stu-class">student class</label>
+                                            <input type="text" class="form-control" id="stu-class" placeholder="student class">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="stu-year">year level applying for</label>
+                                            <select class="form-control" id="stu-year">
+                                                <option value="1">2019/2020</option>
+                                                <option value="2">2020/2021</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="p-code">parent code</label>
+                                            <input type="number" class="form-control" id="p-code" placeholder="parent code">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Respected Mr. / School Principal, kindly agree to re-register the student / student:</p>
+                                <p class="text-center font-weight-bold text-lg">ahmed mohamed ahmed</p>
+                                <p>In your school for the academic year 2020/2021 AD, confirming that I am aware of and my commitment to all the aforementioned school bylaws and regulations and instructions, and my approval of them with my pledge to pay all the amounts due no later than the first week of each semester, and in the event of non-payment, the debt becomes the state of performance and the fees received are considered a bond Executive to claim it</p>
+                                <p>Therefore, please kindly instruct the Fund's Accounting Department to receive the following sums:</p>
+                                <div class="row align-items-end">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-balance">Balance due for 2019/2020
+                                                Until the date: / / 2020</label>
+                                            <input type="number" id="fee1-balance" class="form-control" placeholder="registration fee" value="5000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-reg0">registration fee</label>
+                                            <input type="number" id="fee1-reg0" class="form-control" placeholder="registration fee" value="5000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-uniform">uniform</label>
+                                            <input type="number" id="fee1-uniform" class="form-control" placeholder="uniform" value="2000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-uniform-sport">sports uniform</label>
+                                            <input type="number" id="fee1-uniform-sport" class="form-control" placeholder="sports uniform" value="2000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-bus">bus registration (10 k.D.)</label>
+                                            <input type="number" id="fee1-bus" class="form-control" placeholder="bus registration">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-other">other</label>
+                                            <input type="number" id="fee1-other" class="form-control" placeholder="other">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee1-total">total</label>
+                                            <input type="number" id="fee1-total" class="form-control" placeholder="total">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-secondary">for accounting</p>  
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-payed">paid amount</label>
+                                            <input type="number" id="fee-payed" class="form-control" placeholder="paid amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-receipt">receipt number</label>
+                                            <input type="number" id="fee-receipt" class="form-control" placeholder="receipt number">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-date">date</label>
+                                            <div class="dateInput-wrapper">
+                                                <input type="text" id="fee-date" class="form-control datepicker" placeholder="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-accountant">accountant</label>
+                                            <input type="text" id="fee-accountant" class="form-control" placeholder="accountant">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-secondary">home address</p>
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-disctrict">District</label>
+                                            <select name="stu-disctrict" id="stu-disctrict" class="form-control">
+                                                <option value="1">district 1</option>
+                                                <option value="2">district 2</option>
+                                                <option value="3">district 3</option>
+                                                <option value="4">district 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-area">area</label>
+                                            <select name="stu-area" id="stu-area" class="form-control">
+                                                <option value="1">area 1</option>
+                                                <option value="2">area 2</option>
+                                                <option value="3">area 3</option>
+                                                <option value="4">area 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-block">block</label>
+                                            <select name="stu-block" id="stu-block" class="form-control">
+                                                <option value="1">block 1</option>
+                                                <option value="2">block 2</option>
+                                                <option value="3">block 3</option>
+                                                <option value="4">block 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-street">street</label>
+                                            <select name="stu-street" id="stu-street" class="form-control">
+                                                <option value="1">street 1</option>
+                                                <option value="2">street 2</option>
+                                                <option value="3">street 3</option>
+                                                <option value="4">street 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-qasema">Qasema</label>
+                                            <input type="text" class="form-control" name="stu-qasema" id="stu-qasema" placeholder="Qasema">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-jadda">jadda</label>
+                                            <input type="text" class="form-control" name="stu-jadda" id="stu-jadda" placeholder="jadda">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-building">building</label>
+                                            <input type="text" class="form-control" name="stu-building" id="stu-building" placeholder="building">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-unit">unit</label>
+                                            <input type="text" class="form-control" name="stu-unit" id="stu-unit" placeholder="unit">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label for="stu-marque">special marque</label>
+                                            <input type="text" class="form-control" name="stu-marque" id="stu-marque" placeholder="special marque">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-secondary">Add Father's Details</p>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherFirstName-en"> en.First Name</label>
+                                            <input type="text" class="form-control" name="fatherFirstName-en" id="fatherFirstName-en" placeholder=" en.First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherSecondName-en"> en.Second Name</label>
+                                            <input type="text" class="form-control" name="fatherSecondName-en" id="fatherSecondName-en" placeholder=" en.Second Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherThirdName-en"> en.Third Name</label>
+                                            <input type="text" class="form-control" name="fatherThirdName-en" id="fatherThirdName-en" placeholder=" en.Third Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherFourthName-en"> en.fourth Name</label>
+                                            <input type="text" class="form-control" name="fatherFourthName-en" id="fatherFourthName-en" placeholder=" en.Fourth Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherFirstName-ar"> ar.First Name</label>
+                                            <input type="text" class="form-control" name="fatherFirstName-ar" id="fatherFirstName-ar" placeholder=" ar.First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherSecondName-ar"> ar.Second Name</label>
+                                            <input type="text" class="form-control" name="fatherSecondName-ar" id="fatherSecondName-ar" placeholder=" ar.Second Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherThirdName-ar"> ar.Third Name</label>
+                                            <input type="text" class="form-control" name="fatherThirdName-ar" id="fatherThirdName-ar" placeholder=" ar.Third Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fatherFourthName-ar"> ar.fourth Name</label>
+                                            <input type="text" class="form-control" name="fatherFourthName-ar" id="fatherFourthName-ar" placeholder=" ar.Fourth Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="f-civil-id">civil id</label>
+                                            <input type="text" id="f-civil-id" class="form-control" placeholder="civil id">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label>social state</label>
+                                            <div class="form-row justify-content text-capitalize font-sm">
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="1" class="custom-control-input" id="social1" name="social">
+                                                        <label class="custom-control-label" for="social1">married</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="2" class="custom-control-input" id="social2" name="social">
+                                                        <label class="custom-control-label" for="social2">devorced</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="2" class="custom-control-input" id="social3" name="social">
+                                                        <label class="custom-control-label" for="social3">widower</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="f-work-place">Work Place</label>
+                                            <select class="form-control" id="f-work-place">
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="f-work-address">Work address</label>
+                                            <input type="text" class="form-control" id="f-work-address" placeholder="Work address">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label>sector</label>
+                                            <div class="form-row justify-content text-capitalize font-sm">
+                                                <div class="form-group col-6">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="1" class="custom-control-input" id="sector1" name="sector">
+                                                        <label class="custom-control-label" for="sector1">governmental</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="2" class="custom-control-input" id="sector2" name="sector">
+                                                        <label class="custom-control-label" for="sector2">private</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="fatherMobile1">Mobile 1</label>
+                                            <input type="tel" class="form-control" id="fatherMobile1" name="fatherMobile1" placeholder="Mobile 1">
+                                            
+                                            <div class="custom-control custom-radio mt-3">
+                                                <input type="radio" value="1" class="custom-control-input" id="f-mobile1-check" name="f-mobile">
+                                                <label class="custom-control-label" for="f-mobile1-check">mark active mobile number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="fatherMobile2">Mobile 2</label>
+                                            <input type="tel" class="form-control" id="fatherMobile2" name="fatherMobile2" placeholder="Mobile 2">
+                                            
+                                            <div class="custom-control custom-radio mt-3">
+                                                <input type="radio" value="2" class="custom-control-input" id="f-mobile2-check" name="f-mobile">
+                                                <label class="custom-control-label" for="f-mobile2-check">mark active mobile number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="f-phone">work number</label>
+                                            <input type="number" class="form-control" id="f-phone" placeholder="work number">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="f-home-num">home number</label>
+                                            <input type="number" class="form-control" id="f-home-num" placeholder="home number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-capitalize text-secondary">Add Mother's Details</p>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherFirstName-en"> en.First Name</label>
+                                            <input type="text" class="form-control" name="motherFirstName-en" id="motherFirstName-en" placeholder=" en.First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherSecondName-en"> en.Second Name</label>
+                                            <input type="text" class="form-control" name="motherSecondName-en" id="motherSecondName-en" placeholder=" en.Second Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherThirdName-en"> en.Third Name</label>
+                                            <input type="text" class="form-control" name="motherThirdName-en" id="motherThirdName-en" placeholder=" en.Third Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherFourthName-en"> en.fourth Name</label>
+                                            <input type="text" class="form-control" name="motherFourthName-en" id="motherFourthName-en" placeholder=" en.Fourth Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherFirstName-ar"> ar.First Name</label>
+                                            <input type="text" class="form-control" name="motherFirstName-ar" id="motherFirstName-ar" placeholder=" ar.First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherSecondName-ar"> ar.Second Name</label>
+                                            <input type="text" class="form-control" name="motherSecondName-ar" id="motherSecondName-ar" placeholder=" ar.Second Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherThirdName-ar"> ar.Third Name</label>
+                                            <input type="text" class="form-control" name="motherThirdName-ar" id="motherThirdName-ar" placeholder=" ar.Third Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="motherFourthName-ar"> ar.fourth Name</label>
+                                            <input type="text" class="form-control" name="motherFourthName-ar" id="motherFourthName-ar" placeholder=" ar.Fourth Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="m-civil-id">civil id</label>
+                                            <input type="text" id="m-civil-id" class="form-control" placeholder="civil id">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label>social state</label>
+                                            <div class="form-row justify-content text-capitalize font-sm">
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="1" class="custom-control-input" id="m-social1" name="social">
+                                                        <label class="custom-control-label" for="m-social1">married</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="2" class="custom-control-input" id="m-social2" name="social">
+                                                        <label class="custom-control-label" for="m-social2">devorced</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-4">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="2" class="custom-control-input" id="m-social3" name="social">
+                                                        <label class="custom-control-label" for="m-social3">widower</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="m-work-place">Work Place</label>
+                                            <select class="form-control" id="m-work-place">
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="m-work-address">Work address</label>
+                                            <input type="text" class="form-control" id="m-work-address" placeholder="Work address">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label>sector</label>
+                                            <div class="form-row justify-content text-capitalize font-sm">
+                                                <div class="form-group col-6">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="1" class="custom-control-input" id="m-sector1" name="sector">
+                                                        <label class="custom-control-label" for="m-sector1">governmental</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-6">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" value="2" class="custom-control-input" id="m-sector2" name="sector">
+                                                        <label class="custom-control-label" for="m-sector2">private</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="motherMobile1">Mobile 1</label>
+                                            <input type="tel" class="form-control" id="motherMobile1" name="motherMobile1" placeholder="Mobile 1">
+                                        
+                                            <div class="custom-control custom-radio mt-3">
+                                                <input type="radio" value="1" class="custom-control-input" id="m-mobile1-check" name="m-mobile">
+                                                <label class="custom-control-label" for="m-mobile1-check">mark active mobile number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="motherMobile2">Mobile 2</label>
+                                            <input type="tel" class="form-control" id="motherMobile2" name="motherMobile2" placeholder="Mobile 2">
+
+                                            <div class="custom-control custom-radio mt-3">
+                                                <input type="radio" value="2" class="custom-control-input" id="m-mobile2-check" name="m-mobile">
+                                                <label class="custom-control-label" for="m-mobile2-check">mark active mobile number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="m-phone">work number</label>
+                                            <input type="number" class="form-control" id="m-phone" placeholder="work number">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="m-home-num">home number</label>
+                                            <input type="number" class="form-control" id="m-home-num" placeholder="home number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-capitalize text-secondary">school fee statement (including school books) Funds required upon registration:</p>
+                                <label>school fee</label>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="fee-reg">registration fee</label>
+                                            <input type="number" id="fee-reg" class="form-control" placeholder="registration fee" value="5000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="fee-reg1">first installment</label>
+                                            <input type="number" id="fee-reg1" class="form-control" placeholder="first installment" value="2000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="form-group">
+                                            <label for="fee-reg2">second installment</label>
+                                            <input type="number" id="fee-reg2" class="form-control" placeholder="second installment" value="3000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-capitalize text-secondary">Funds required upon registration:</p>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-reg0">registration fee</label>
+                                            <input type="number" id="fee-reg0" class="form-control" placeholder="registration fee" value="5000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-uniform">uniform</label>
+                                            <input type="number" id="fee-uniform" class="form-control" placeholder="uniform" value="2000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-uniform-sport">sports uniform</label>
+                                            <input type="number" id="fee-uniform-sport" class="form-control" placeholder="sports uniform" value="2000">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="fee-bus">bus registration</label>
+                                            <input type="number" id="fee-bus" class="form-control" placeholder="bus registration" value="1000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="file1">In the event of a divorce, please attach a copy of the final ruling on the custody of the arbitrator</label>
+                                            <div class="fileInput-wrapper">
+                                                <input type="file" id="file1" name="file1">
+                                                <label for="file1">Attach Papers</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="file2">A copy of the civil ID cards of the student and the guardian must be attached (valid)</label>
+                                            <div class="fileInput-wrapper">
+                                                <input type="file" id="file2" name="file2">
+                                                <label for="file2">Attach Papers</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dyn-content">
+                                    <ul>
+                                        <li>The student or any of his siblings will not be re-registered unless all the amounts owed by him are paid to all the children enrolled in the school for the current academic year.</li>
+                                        <li>The student will not be re-registered without this form signed by the guardian with the payment of the required fees within the period of
+                                            10/2/2020 to 7/3/2021 and according to the instructions of the Ministry of Education, the school is not obligated to provide a place for those who fail to re-register within the periods specified for re-registration.</li>
+                                        <li>The registration fee is not refundable except in the event of residency cancellation or final move abroad, provided that the school is notified in writing no later than 9/30/2020.</li>
+                                        <li>The guardian is not entitled to recover the tuition fees when the student is dismissed if the regulations apply to him or because the absence percentage has been exhausted.</li>
+                                        <li>The guardian must keep all the original receipts and invoices issued by the school * Tuition fees may be increased according to the decisions of the Ministry of Education</li>
+                                        <li>The guardian undertakes to update the student’s data periodically or whenever there is any change in any of the data registered with the school administration, especially the educational state, address and phones</li>
+                                        <li>The address registered in the above form is considered a place chosen for the guardian for correspondence and correspondence, and in the event of a change, he is obligated to inform us formally of what the law has organized</li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary btn-lg btn-rounded mt-4 px-5 btn-wz-b4 wizard-btn">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transfer" role="tabpanel" aria-labelledby="pills-transfer-tab">
+                            <p class="font-weight-bold text-center">This part is filled in in case you wish to transfer to another school or abroad</p>
+                            <p>In the event that the guardian wishes to transfer the student from the school for the 2020/2021 academic year, please kindly review the student affairs and bring (No objection) from the school to be transferred to, as well as a clearance from the accounting department in our school before the end of the current school year.</p>
+                            <form action="" class="wizerdform">
+                                <div class="row align-items-end">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="trans-stu-name">I would like to transfer the student</label>
+                                            <input type="text" class="form-control" id="trans-stu-name" placeholder="student name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="trans-dest">The destination to which it is transferred</label>
+                                            <input type="text" class="form-control" id="trans-dest" placeholder="destination">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="trans-p-name">parent name</label>
+                                            <input type="text" class="form-control" id="trans-p-name" placeholder="parent name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="trans-date">date</label>
+                                            <div class="dateInput-wrapper">
+                                                <input type="text" id="trans-date" class="form-control datepicker" placeholder="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary btn-lg btn-rounded mt-4 px-5 btn-wz-b4 wizard-btn">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="main-footer">
+            <div id="footer-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="footer-brand"><img class="h-100 lazyload" data-src="assets/images/logo1.png"></a>
+                            <p class="m-0 text-justify">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis molestiae recusandae cumque. Non laudantium ipsum sapiente officiis. 
+                            </p>
+                            <div class="apps-blk text-capitalize mt-2">
+                                <div class="font-weight-bold mb-2"><img class="app-ico app-ico-lg lazyload" data-src="assets/images/ico-teams.png" >  download teams:</div>
+                                <div class="d-flex">
+                                    <div><a href="https://www.microsoft.com/ar-ww/microsoft-365/microsoft-teams/download-app#desktopAppDownloadregion" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-windows.png" >  desktop</a></div>
+                                    <div class="mx-3"><a href="https://play.google.com/store/apps/details?id=com.microsoft.teams&hl=en_US" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-android.png" >  android</a></div>
+                                    <div><a href="https://apps.apple.com/eg/app/microsoft-teams/id1113153706" target="blank"><img class="app-ico app-ico-sm lazyload" data-src="assets/images/ico-ios.png" > ios</a></div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="px-lg-3">
+                                <h5 class="footer-tit">imprtant links</h5>
+                                <div class="d-flex justify-content-between">
+                                    <ul class="list-unstyled m-0 text-capitalize">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a href="about.html">about school</a></li>
+                                        <li><a href="stages.html">study stages</a></li>
+                                        <li><a href="jobs.html">jobs</a></li>
+                                        <li><a href="admission.html">admission</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled m-0 text-capitalize">
+                                        <li><a href="re-enroll.html">re-enrollment</a></li>
+                                        <li><a href="contact.html">contact us</a></li>
+                                        <li><a href="privacy.html">privacy policy</a></li>
+                                        <li><a href="terms.html">terms of use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="footer-tit">contact information</h5>
+                            <p class="text-capitalize">don't hasitate calling us on or numbers or sending us a message</p>
+                            <div class="contact-item"><i class="fas fa-phone"></i> <span class="ltr-blk">+965 2575 6545</span></div>
+                            <div class="contact-item"><i class="fas fa-envelope"></i> <span class="ltr-blk">school@email.com</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="container">
+                    <div class="copyright-inner">
+                        Copyright © fajer alsabah school 2020 | Designed & Developed by <a class="text-secondary" href="https://roqay.software" target="_balnk">roqay</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+    <script src="assets/js/scripts.js"></script>
+    
+    
+</body>
+</html>
