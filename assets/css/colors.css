@@ -330,34 +330,42 @@ body {
   color: #043a61;
 }
 
+/* Aside & Aside Navigation */
 #p-navbar-toggler-lnk span {
   background-color: #df742b;
 }
 
 #p-aside .p-aside-inner-wrapper {
-  color: #fff;
-  background-color: #043a61;
-  border-color: #111623;
+  color: #000;
+  background-color: #ecf0f5;
+  border-color: #fff;
 }
 
 #p-aside .stu-card-info {
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: #cae3f6;
 }
 
 #p-nav a {
-  color: #fff;
+  color: #043a61;
   background-color: #eff2fb;
   border-color: #dee2e6 !important;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #fff;
   border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 #p-nav li:hover a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #043a61;
 }
 
 #p-nav li.active a {
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: #043a61;
+  color: #fff;
+}
+
+#p-nav > ul > li.active > a > img {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(2) contrast(100);
+  -webkit-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(2) contrast(100);
 }
 
 .notify-circle,
@@ -384,17 +392,20 @@ body {
 }
 
 /* Parent Pages Content */
-.notification-date, .lesson-date {
+.notification-date,
+.lesson-date {
   color: #df742b;
 }
 
 .notification-card a,
-.lesson-card a, .download-link {
+.lesson-card a,
+.download-link {
   color: #043a61;
 }
 
 .notification-card a:hover,
-.lesson-card a:hover, .download-link:hover {
+.lesson-card a:hover,
+.download-link:hover {
   color: #df742b;
 }
 

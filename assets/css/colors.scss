@@ -41,12 +41,29 @@ $colors: (
         scrollThumbHoverBg: #555,
 
         // Parent View Styles 
-        p_AsideBg : #043a61,
-        p_AsideBorder : #111623,
-        p_StuCardBg : rgba(255,255,255,0.45),
-        p_NavLinkBg: rgba(255,255,255,0.15),
-        p_NavLinkBgHover: rgba(255,255,255,0.3),
-        p_NavLinkBgActive: rgba(255,255,255,0.45),
+        // p_AsideBg : #043a61,
+        // p_AsideColor : #fff,
+        // p_AsideBorder : #111623,
+        // p_StuCardBg : rgba(255,255,255,0.45),
+        // p_NavLinkBg: rgba(255,255,255,0.15),
+        // p_NavLinkBgHover: rgba(255,255,255,0.3),
+        // p_NavLinkBgActive: rgba(255,255,255,0.45),
+        // p_NavLinkColor: #fff,
+        // p_NavLinkHoverColor: #fff,
+        // p_NavLinkActiveColor: #fff,
+        // p_NavLinkBorder: rgba(255,255,255,0.3),
+        // p_breakcrumbBg : #f6f7f8,
+        // Parent View Styles 
+        p_AsideBg : #ecf0f5,
+        p_AsideColor : #000,
+        p_AsideBorder : #fff,
+        p_StuCardBg : #cae3f6,
+        p_NavLinkBg: #fff,
+        p_NavLinkBgHover: rgba(255,255,255,0.8),
+        p_NavLinkBgActive: #043a61,
+        p_NavLinkColor: #043a61,
+        p_NavLinkHoverColor: #043a61,
+        p_NavLinkActiveColor: #fff,
         p_NavLinkBorder: rgba(255,255,255,0.3),
         p_breakcrumbBg : #f6f7f8,
         
@@ -206,28 +223,40 @@ body{color: map-get($colors, main);}
 ///////////////////////////////////////////////////////////////////////////
 // Start Parent View Styles
 ///////////////////////////////////////////////////////////////////////////
+/* Aside & Aside Navigation */
 #p-navbar-toggler-lnk span{background-color: map-get($colors, secondary );}
-#p-aside .p-aside-inner-wrapper{color:#fff;background-color: map-get($colors, p_AsideBg);border-color: map-get($colors, p_AsideBorder );}
+#p-aside .p-aside-inner-wrapper{color:map-get($colors, p_AsideColor );background-color: map-get($colors, p_AsideBg);border-color: map-get($colors, p_AsideBorder );}
 #p-aside .stu-card-info{background-color: map-get($colors, p_StuCardBg );}
-#p-nav a {color: map-get($colors, whiteColor);background-color: #eff2fb;border-color: #dee2e6!important;background-color: map-get($colors, p_NavLinkBg );border-color: map-get($colors, p_NavLinkBorder )!important;}
-#p-nav li:hover a{background-color: map-get($colors, p_NavLinkBgHover );}
-#p-nav li.active a{background-color: map-get($colors, p_NavLinkBgActive );}
+#p-nav a {color: map-get($colors, p_NavLinkColor);background-color: #eff2fb;border-color: #dee2e6!important;background-color: map-get($colors, p_NavLinkBg );border-color: map-get($colors, p_NavLinkBorder )!important;}
+#p-nav li:hover a{background-color: map-get($colors, p_NavLinkBgHover );color: map-get($colors, p_NavLinkHoverColor );}
+#p-nav li.active a{background-color: map-get($colors, p_NavLinkBgActive );color:map-get($colors, p_NavLinkActiveColor );}
+#p-nav > ul > li.active > a > img{
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(2) contrast(100);
+  -webkit-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(2) contrast(100);
+}
 .notify-circle,
-#p-nav .notify-num{background-color: map-get($colors, secondary );color: map-get($colors, whiteColor );}
+#p-nav .notify-num{
+  background-color: map-get($colors, secondary );color: map-get($colors, whiteColor );
+}
 /* Parent Pages Breadcrumb */
 .breadcrumb{background-color: map-get($colors, p_breakcrumbBg )!important;}
 .breadcrumb a{color: map-get( $colors, primary )!important;}
 .breadcrumb a:hover{color: map-get( $colors, secondary )!important;}
 .breadcrumb-item.active {color: #9e9e9e;}
 /* Parent Pages Content */
-.notification-date, .lesson-date {color: map-get($colors, secondary );}
-.notification-card a,
-.lesson-card a, .download-link {
-    color: map-get($colors, primary);
+.notification-date, 
+.lesson-date {
+  color: map-get($colors, secondary );
+}
+.notification-card a, 
+.lesson-card a, 
+.download-link {
+  color: map-get($colors, primary);
 }
 .notification-card a:hover,
-.lesson-card a:hover, .download-link:hover {
-    color: map-get($colors, secondary );
+.lesson-card a:hover, 
+.download-link:hover {
+  color: map-get($colors, secondary );
 }
 .lessons-plan-tabs .nav-tabs .nav-item .nav-link {
   background-color: map-get($colors, secondaryTrans25 );
